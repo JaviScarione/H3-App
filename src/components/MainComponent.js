@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
+import LogIn from './LogInComponent';
 
 
 function Main() {
@@ -7,7 +8,7 @@ function Main() {
     return (
       <div>
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<LogIn />} />
         </Routes>
       </div>
     );
